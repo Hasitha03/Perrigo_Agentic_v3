@@ -41,9 +41,7 @@ def main():
 
     try:
         logo = Image.open("Images/perrigo-logo.png")
-        col1, col2 = st.sidebar.columns([1, 4])
-        with col1:
-            st.image(logo, width=100)
+        st.image(logo, width=80)
     except Exception:
         st.sidebar.error("Logo image not found.")
 
