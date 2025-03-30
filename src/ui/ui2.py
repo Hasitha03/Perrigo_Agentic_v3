@@ -107,7 +107,7 @@ def main():
     if 'static_optimization_response' not in st.session_state:
         st.session_state.static_optimization_response = []
 
-    st.title("💬 GenAI Answer Bot")
+    st.subheader("💬 GenAI Answer Bot")
     if question := st.chat_input("Type your message...",key="user_input"):
         st.markdown(f"""
                 <div style="background-color: #f8f9fa; padding: 10px; border-radius: 10px; margin: 10px 0;">
